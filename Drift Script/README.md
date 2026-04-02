@@ -1,14 +1,14 @@
-# API Doc Audit
+# Docs Drift Script
 
-API Doc Audit is a lightweight Python CLI that audits API documentation against OpenAPI specs to detect documentation drift.
+The Docs Drift Script is a lightweight Python CLI that audits API documentation against OpenAPI specs to detect documentation drift.
 
 It compares live OpenAPI endpoint inventories from one or more services with local Markdown or MDX documentation and reports:
 
-- undocumented endpoints present in the spec but not in docs
-- documented endpoints that no longer exist in the available specs
-- matched endpoints
-- per-service coverage summaries
-- fetch and parsing errors encountered during the audit
+- Undocumented endpoints present in the spec but not in docs
+- Documented endpoints that no longer exist in the available specs
+- Matched endpoints
+- Per-service coverage summaries
+- Fetch and parsing errors encountered during the audit
 
 ## Why It Matters
 
