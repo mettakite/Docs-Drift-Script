@@ -1,0 +1,173 @@
+{
+  "generated_at": "2026-04-02T00:00:00+00:00",
+  "summary": {
+    "services_configured": 2,
+    "services_audited": 2,
+    "services_with_errors": 0,
+    "spec_fetch_complete": true,
+    "documented_endpoint_count": 7,
+    "spec_endpoint_count": 8,
+    "matched_endpoint_count": 6,
+    "undocumented_endpoint_count": 2,
+    "documented_missing_endpoint_count": 1,
+    "docs_errors_count": 0
+  },
+  "services": [
+    {
+      "service": "service-a",
+      "spec_url": "https://api.example.com/service-a/openapi.json",
+      "spec_endpoint_count": 4,
+      "matched_count": 3,
+      "undocumented_count": 1,
+      "coverage_percentage": 75.0,
+      "matched_endpoints": [
+        {
+          "method": "GET",
+          "path": "/v1/payouts",
+          "service": "service-a",
+          "source_files": [
+            "payouts.md"
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/v1/payouts/{payout_id}",
+          "service": "service-a",
+          "source_files": [
+            "payouts.md"
+          ]
+        },
+        {
+          "method": "POST",
+          "path": "/v1/payouts",
+          "service": "service-a",
+          "source_files": [
+            "payouts.md"
+          ]
+        }
+      ],
+      "undocumented_endpoints": [
+        {
+          "method": "POST",
+          "path": "/v1/payouts/{payout_id}/cancel",
+          "service": "service-a"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "service": "service-b",
+      "spec_url": "https://api.example.com/service-b/v3/api-docs",
+      "spec_endpoint_count": 4,
+      "matched_count": 3,
+      "undocumented_count": 1,
+      "coverage_percentage": 75.0,
+      "matched_endpoints": [
+        {
+          "method": "GET",
+          "path": "/v1/payins",
+          "service": "service-b",
+          "source_files": [
+            "payins.md"
+          ]
+        },
+        {
+          "method": "POST",
+          "path": "/v1/payins",
+          "service": "service-b",
+          "source_files": [
+            "payins.md"
+          ]
+        },
+        {
+          "method": "POST",
+          "path": "/v1/payins/{payin_id}/refund",
+          "service": "service-b",
+          "source_files": [
+            "payins.md"
+          ]
+        }
+      ],
+      "undocumented_endpoints": [
+        {
+          "method": "GET",
+          "path": "/v1/payins/{payin_id}",
+          "service": "service-b"
+        }
+      ],
+      "errors": []
+    }
+  ],
+  "undocumented_endpoints": [
+    {
+      "method": "POST",
+      "path": "/v1/payouts/{payout_id}/cancel",
+      "service": "service-a"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/payins/{payin_id}",
+      "service": "service-b"
+    }
+  ],
+  "documented_missing_endpoints": [
+    {
+      "method": "GET",
+      "path": "/v1/legacy-payouts",
+      "source_files": [
+        "payouts.md"
+      ]
+    }
+  ],
+  "matched_endpoints": [
+    {
+      "method": "GET",
+      "path": "/v1/payouts",
+      "service": "service-a",
+      "source_files": [
+        "payouts.md"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/v1/payouts/{payout_id}",
+      "service": "service-a",
+      "source_files": [
+        "payouts.md"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/v1/payouts",
+      "service": "service-a",
+      "source_files": [
+        "payouts.md"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/v1/payins",
+      "service": "service-b",
+      "source_files": [
+        "payins.md"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/v1/payins",
+      "service": "service-b",
+      "source_files": [
+        "payins.md"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/v1/payins/{payin_id}/refund",
+      "service": "service-b",
+      "source_files": [
+        "payins.md"
+      ]
+    }
+  ],
+  "errors": []
+}

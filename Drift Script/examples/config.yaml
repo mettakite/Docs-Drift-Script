@@ -1,0 +1,11 @@
+services:
+  service-a:
+    base_url: https://api.example.com/service-a
+    openapi_path: /openapi.json
+  service-b:
+    base_url: https://api.example.com/service-b
+    openapi_path: /v3/api-docs
+
+docs_path: ./examples/sample_docs
+output_path: ./examples/output
+request_timeout_seconds: 20
