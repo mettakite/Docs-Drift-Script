@@ -226,7 +226,7 @@ Available reports include:
 #### Report examples
 
 <details>
-<summary><h4>Markdown report</h4></summary>
+<summary><h3>Markdown report</h3></summary>
 
 <h1>API Documentation Drift Report</h1>
 
