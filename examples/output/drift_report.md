@@ -7,14 +7,16 @@
 - Services audited: 2
 - Spec fetch complete: yes
 
-## Summary
+## Audit Summary
 
-- Documented endpoints found in docs: 7
-- Endpoints found in available specs: 8
-- Matched endpoints: 6
+The audit compares endpoint references found in documentation against endpoints defined in the OpenAPI specification(s).
+
+- Number of endpoints cited in documentation: 7
+- Number of endpoints defined in OpenAPI specification(s): 8
+- Endpoints matched between documentation and specification(s): 6
 - Undocumented endpoints: 2
 - Documented but missing endpoints: 1
-- Docs parsing errors: 0
+- Documentation parsing errors: 0
 
 ## Coverage By Service
 
